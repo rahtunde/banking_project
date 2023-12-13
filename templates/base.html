@@ -1,0 +1,299 @@
+
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Template Main CSS File -->
+    <link href="{% static 'accounts/css/base_style.css' %}" rel="stylesheet">
+    <link href="{% static 'accounts/css/responsive.css' %}" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/aac7597f84.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    {% block head%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    {% endblock %}
+</head>
+<body>
+    <!-- preloader -->
+    <div class="loader-wrap">
+        <div class="preloader">
+            <div class="preloader-close">close</div>
+            <div id="handle-preloader" class="handle-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                        <span data-text-preloader="m" class="letters-loading">
+                            m
+                        </span>
+                        <span data-text-preloader="e" class="letters-loading">
+                            e
+                        </span>
+                        <span data-text-preloader="t" class="letters-loading">
+                            t
+                        </span>
+                        <span data-text-preloader="r" class="letters-loading">
+                            r
+                        </span>
+                        <span data-text-preloader="o" class="letters-loading">
+                            o
+                        </span>
+                        <span data-text-preloader="b" class="letters-loading">
+                            b
+                        </span>
+                        <span data-text-preloader="a" class="letters-loading">
+                            a
+                        </span>
+                        <span data-text-preloader="n" class="letters-loading">
+                            n
+                        </span>
+                        <span data-text-preloader="k" class="letters-loading">
+                            k
+                        </span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <header class="main-header" id="first-header">
+            <div class="header-top">
+                <div class="large-container">
+                    <div class="top-inner">
+                        <ul class="top-list-links">
+                            <li><a href="#">Carrer</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Reward</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                        <ul class="info-list">
+                            <li>
+                                <iconify-icon icon="mdi:gmail" class="mail-icon"></iconify-icon>
+                                <a href="#">bankinfo@gmail.com</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="fluent:location-28-regular" class="mail-icon"></iconify-icon>
+                                <a href="#">Find The Nearest Branch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower" id="homeHeader">
+                <div class="large-container">
+                    <div class="outer-box">
+                        <div class="header-logo">
+                            <div class="header-shape"></div>
+                            <figure class="bank-logo">
+                                <a href="#">
+                                    <img src="{% static 'accounts/img/logo/logo.png' %}" alt="">
+                                </a>
+
+                            </figure>
+                        </div>
+                        <div class="menu-area">
+                            <!-- mobile navigation menu -->
+                            <div class="mobile-menu-toggle">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+
+
+                            </div>
+                            <nav id= "navbar" class="menu navbar-expand-md navbar-light clearfix">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="current dropdown">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="toggle-bottom">
+                                            <a href="#">
+                                                Payments
+                                                <iconify-icon icon="icon-park-outline:down"></iconify-icon>
+                                            </a>
+                                            <ul class="dropdown-content">
+                                                <li><a href="#">Bill Payment</a></li>
+                                                <li><a href="#">Payment history</a></li>
+                                                <li><a href="#">Send Money</a></li>
+                                                <li><a href="#">Receive Money</a></li>
+                                                <li><a href="#">Currency Exchange</a></li>
+                                                <li><a href="#">Credit Cards</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="toggle-bottom">
+                                            <a href="#">
+                                                Services
+                                                <iconify-icon icon="icon-park-outline:down"></iconify-icon>
+                                            </a>
+                                            <ul class="dropdown-content">
+                                                <li><a class="" href="#">Digital Banking</a></li>
+                                                <li><a class="" href="#">Open Account</a></li>
+                                                <li><a class="" href="#">Moblie&Web Banking</a></li>
+                                                <li><a class="" href="#">Insurance Policies</a></li>
+                                                <li><a class="" href="#">Home & Property Loan</a></li>
+                                                <li><a class="" href="#">All Banking Account</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="menu-right-content">
+                                <a href="#" class="theme-btn btn-one">
+                                    login
+                                </a>
+                                <a href="#" class="theme-btn btn-two">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sticky Header-->
+            <div class="sticky-header" id="fixedNavbar">
+                <div class="large-container">
+                    <div class="outer-box">
+                        <div class="header-logo">
+                            <div class="header-shape"></div>
+                            <figure class="bank-logo">
+                                <a href="index.html"><img src="{% static 'accounts/img/logo/logo.png' %}" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area">
+                            <nav class="menu clearfix" id="menuContainer">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                            <div class="menu-right-content ml_70">
+                                <a href="index.html" class="theme-btn btn-two mr_20">Login</a>
+                                <a href="index.html" class="theme-btn btn-one">SignUp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    {% block body %}
+    
+    {% endblock %}
+
+
+  <!-- ======= Footer ======= -->
+    <footer class="main-footer">
+        <div class="widget-section">
+            <div class="pattern-layer">
+                <div class="pattern-1"></div>
+                <div class="pattern-2"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget logo-widget">
+                            <figure class="footer-logo"><a href="index.html"><img src="{% static 'accounts/img/logo/logo-2.png' %}" alt=""></a></figure>
+                            <p>Tincidunt neque pretium lectus donec risus. Mauris mi tempor nunc orc leo consequat vitae erat gravida lobortis nec et sagittis.</p>
+                            <ul class="social-links">
+                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget links-widget ml_40">
+                            <div class="widget-title">
+                                <h4>Explore</h4>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="index.html">Testimonials</a></li>
+                                    <li><a href="career.html">Careers</a></li>
+                                    <li><a href="career-details.html">Career Detail</a></li>
+                                    <li><a href="faq.html">Faq’s</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-title">
+                                <h4>Usefull Links</h4>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <li><a href="index.html">Credit Card</a></li>
+                                    <li><a href="index.html">Saving Account</a></li>
+                                    <li><a href="index.html">Digital Gift Cards</a></li>
+                                    <li><a href="index.html">Apply for Loans</a></li>
+                                    <li><a href="index.html">Mobile Application</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="footer-widget contact-widget">
+                            <div class="widget-title">
+                                <h4>Find Our Branch & ATM</h4>
+                            </div>
+                            <div class="form-inner">
+                                <form method="post" action="index.html">
+                                    <div class="form-group">
+                                        <div class="select-box">
+                                            <select class="wide" style="display: none;">
+                                            <option data-display="Branch">Branch</option>
+                                            <option value="1">California</option>
+                                            <option value="2">Man City</option>
+                                            <option value="3">New York</option>
+                                            </select>
+                                            <div class="wide nice-select" tabindex="0">
+                                                <span class="current">Branch</span>
+                                                <iconify-icon icon="icon-park-outline:down" class="down-icon"></iconify-icon>
+                                                <ul class="list">
+                                                    <li data-value="Branch" data-display="Branch"  class="option">Branch</li>
+                                                    <li data-value="1" class="option">New York</li>
+                                                    <li data-value="2" class="option">California</li>
+                                                    <li data-value="3" class="option">Texas</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="location" placeholder="Location">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="theme-btn btn-one new-btn">Find on Map</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom centred">
+            <div class="auto-container">
+                <div class="copyright"><p>Copyright 2023 by <a href="index.html">MertoBank</a>. All Right Reserved.</p></div>
+            </div>
+        </div>
+    </footer>
+    <!-- main-footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- main-js -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <script src="{% static 'accounts/js/base.js' %}"></script>
+</body>
+</html>
+
+
